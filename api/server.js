@@ -19,7 +19,7 @@ server.use(session({
   secret: process.env.JWT_SECRET,
 }))
 
-server.use('/users', usersRouter)
+server.use('/auth', usersRouter)
 server.use('/plants', plantsRouter)
 
 server.get('/', (req, res) => {
