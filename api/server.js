@@ -23,7 +23,7 @@ server.use('/users', usersRouter)
 server.use('/plants', plantsRouter)
 
 server.get('/', (req, res) => {
-  res.send();
+  res.send('welcome');
 });
 
 module.exports = server;
