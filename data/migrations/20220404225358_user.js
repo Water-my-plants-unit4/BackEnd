@@ -3,6 +3,7 @@ exports.up = function(knex) {
       table.increments('users_id')
       table.text('username', 128).unique().notNullable()
       table.text('password', 128).unique().notNullable()
+      table.text('phoneNumber', 128).unique().notNullable()
   })
 };
 

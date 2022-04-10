@@ -14,10 +14,6 @@ router.get('/', async(req, res, next) => {
     }
 });
 
-// router.get('/:id', (req, res) => {
-//     res.json(req.user)
-// });
-
 router.post('/register', async (req, res, next) => {
     try {
         const {username, password, phoneNumber} = req.body
@@ -63,7 +59,7 @@ router.post('/login', async(req, res, next) => {
 
 router.put('/:id', async(req, res, next) => {
     try {
-        const { phoneNumber, password, phoneNumber} = req.body
+        const { username, password, phoneNumber} = req.body
         const userUpdate = await User.update({ phoneNumber, password: await bcrypt.hash(password, 8)}, req.params.id)
         res.status(200).json({ userUpdate: userUpdate, message: 'Updated!'})
     } catch(err) {
