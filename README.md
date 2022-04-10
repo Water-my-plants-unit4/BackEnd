@@ -1,11 +1,4 @@
 # BackEnd
+Frontend deployed: https://water-my-plant-one.vercel.app/
 
-API END POINTS
-
-GET /auth 'get user'
-
-POST /auth/register 'register user'
-
-POST /auth/login 'user login'
-
-GET /auth/logout 'logout'
+Backend deoloyed: https://water-my-plant-pt34.herokuapp.com/
